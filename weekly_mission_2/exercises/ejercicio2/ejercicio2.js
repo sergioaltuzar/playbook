@@ -56,5 +56,35 @@ const explorers = [
           exercisesFinished: false
         }
       }
-    }
+    }  
    ]
+ 
+   console.log(".....");
+   explorers.forEach(nombre => console.log('Nombre Explorer: '+ nombre.name));
+   console.log(".....");
+   explorers.forEach(nombre => console.log('Stack: '+ nombre.stack)); 
+   console.log(".....");
+   const listastack = explorers.map((sta) => sta.stack);
+   console.log(listastack);
+   
+   console.log(".....");
+   const js = explorers.filter((lis) => lis.stack.includes('js'));
+   console.log(js);
+
+   console.log(".....");
+   const cdmx = explorers.find((cdmx) => cdmx.city === 'CDMX');
+  console.log("El primer explorer que es de la cdmx es: " + cdmx.name);
+  
+  console.log(".....");
+  console.log("Suma de exercises_completed: ");
+  const suma = explorers.reduce ((acumulador, valoractual) =>  acumulador + valoractual.exercises_completed, 0);
+  console.log(suma);
+  
+  console.log(".....");
+  const yesTrueSome = explorers.some((t)=> t.exercisesFinished || true);
+  console.log("Al menos uno de los explorer tiene la propiedad exercisesFinished ?: "  + yesTrueSome);
+  
+  console.log(".....");
+  const yesTrueEvery = explorers.every((name) => name.isFinished || true);
+  console.log("Al menos uno de los explorer tiene la propiedad isFinished?: " + yesTrueEvery);
+  
