@@ -64,8 +64,8 @@ const explorers = [
    console.log("ejercicio 2.2");
    explorers.forEach(nombre => console.log('Stack: '+ nombre.stack)); 
    console.log("ejercicio 3.2");
-   const listastack = explorers.map((sta) => sta.stack);
-   console.log(listastack);
+   const explorers_stack = explorers.map((sta) => sta.stack);
+   console.log(explorers_stack);
    
    console.log("ejercicio 4.2");
    const js = explorers.filter((lis) => lis.stack.includes('js'));
