@@ -68,16 +68,16 @@ const explorers = [
    console.log(explorers_stack);
    
    console.log("ejercicio 4.2");
-   const js = explorers.filter((lis) => lis.stack.includes('js'));
+   const js = explorers.filter(explorers_list => explorers_list.stack.includes('js'));
    console.log(js);
 
    console.log("ejercicio 5.2");
-   const cdmx = explorers.find((cdmx) => cdmx.city === 'CDMX');
+   const cdmx = explorers.find(explorer_cdmx => explorer_cdmx.city === 'CDMX');
   console.log("El primer explorer que es de la cdmx es: " + cdmx.name);
   
   console.log("ejercicio 6.2");
   console.log("Suma de exercises_completed: ");
-  const suma = explorers.reduce ((acumulador, valoractual) =>  acumulador + valoractual.exercises_completed, 0);
+  const suma = explorers.reduce ((acc, explorer_completed) =>  acc + explorer_completed.exercises_completed, 0);
   console.log(suma);
   
   console.log("ejercicio 7.2");
