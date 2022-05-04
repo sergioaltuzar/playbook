@@ -7,6 +7,6 @@ Proyectos desarrollados en la semana 4:
 | ------------- |:-------------:| -----:|
 |`fizzbuzz`|1|[Link al repo](https://github.com/sergioaltuzar/Refactoring)|
 |`PR`|2|[Link al repo](https://github.com/sergioaltuzar/fizzbuzz)|
-|`Code Challenge`|3, 4, 5||
+|`Code Challenge`|3, 4, 5|[Link al repo](https://github.com/sergioaltuzar/codechallenge) |
 |`Trello`|6||
 |`Trello JS Fork`|7||
